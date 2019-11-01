@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+	<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" 
+		"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.bona.mapper.UserMapper">
+
+
+
+	<!-- 根据用户名查询用户 -->
+ 	<select id="findByName" resultType="com.bona.domain.User">
+		select * from user where name=#{name}
+	</select> 
+
+	<select id="findById" resultType="com.bona.domain.User">
+		select * from user where id=#{id}
+	</select> 
+
+
+</mapper>
+	
+	
+	
+	
+	
